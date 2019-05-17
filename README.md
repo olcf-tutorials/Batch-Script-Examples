@@ -34,7 +34,9 @@ jsrun -n ${number_of_resource_sets}                   \
 
 <hr>
 
-***Note:***
-`js_task_info |& sort -k2 -n` is merely a stand-in here, and should be replaced with your executable.
+***Notes:***
+- `js_task_info |& sort -k2 -n` is merely a stand-in here, and should be replaced with your executable. 
+- This script is intended to be a starting place. It may be sufficient for very simple runs, but only a few `jsrun` options are included here. For a more in-depth look at `jsrun`, see its very own [jsrun Quick Start Guide](https://github.com/olcf-tutorials/jsrun_quick_start_guide).
+- If you're looking for other examples of job submission scripts for Summit, see [this great repo](https://github.com/dappelha/summit-scripts) by [@dappelha](https://github.com/dappelha)
 
 <hr>
