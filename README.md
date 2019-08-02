@@ -13,7 +13,7 @@ Copy-Paste ready!
 #BSUB -nnodes <NUMBER_OF_NODES>
 # END LSF DIRECTIVES
 
-number_of_nodes=$(echo $LSB_HOSTS | tr " " "\n" | grep -v "batch" | uniq | wc -l)
+number_of_nodes=$(cat $LSB_DJOB_HOSTFILE | uniq | head -n -1 | wc -l)
 
 # JSRUN OPTIONS (CONFIGURE ME!)
 number_of_resource_sets=12
